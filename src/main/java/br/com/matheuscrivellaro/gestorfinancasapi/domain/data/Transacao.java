@@ -20,4 +20,10 @@ public class Transacao {
     @ManyToOne
     private Categoria categoria;
 
+    public Transacao(Double valor, String descricao, LocalDateTime data, Categoria categoria) {
+        this.valor = valor;
+        this.descricao = descricao;
+        this.data = data;
+        this.categoria = categoria;
+    }
 }
